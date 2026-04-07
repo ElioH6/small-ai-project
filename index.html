@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>StudyFlow AI</title>
+
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    </head>
+    <body id="home">
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark sticky-top custom-navbar">
+            <div class="container py-2">
+                <a class="navbar-brand d-flex align-items-center gap-3" href="#home">
+                    <div class="brand-box">B</div>
+                    <span class="fw-semibold fs-2">BTS
+                        <span class="text-info-custom">SIO</span>
+                        AI</span>
+                </a>
+
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#mainNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav ms-auto gap-lg-4 pt-4 pt-lg-0">
+                        <li class="nav-item mb-lg-0 mb-3">
+                            <a class="custom-link" href="#features">Features</a>
+                        </li>
+                        <li class="nav-item mb-lg-0 mb-3">
+                            <a class="custom-link" href="#documents">Documents</a>
+                        </li>
+                        <li class="nav-item mb-lg-0 mb-3">
+                            <a class="custom-link" href="#contact">Contact</a>
+                        </li>
+                        <li class="nav-item my-lg-0 my-3">
+                            <a class="btn btn-demo rounded-pill px-4" href="pages/chat.html">Try</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero -->
+        <section class="hero py-5">
+            <div class="container py-5">
+                <div class="row align-items-center" style="gap: 50px 0;">
+                    <div class="col-lg-6 reveal">
+                        <p class="small-title">AI assistant for students</p>
+                        <h1 class="display-2 fw-bold gradient-text mb-4">Understand your courses, faster.</h1>
+                        <p class="hero-text mb-4">
+                            Upload PDFs, notes, slides or assignments and let your chatbot summarize,
+                            explain, answer questions and help you revise in a clean student-friendly
+                            workspace.
+                        </p>
+
+                        <div class="d-flex flex-wrap gap-3 mb-4">
+                            <a href="pages/chat.html" class="btn btn-main btn-lg rounded-pill px-4">Open workspace</a>
+                            <a href="#features" class="btn btn-outline-custom btn-lg rounded-pill px-4">See features</a>
+                        </div>
+
+                        <div class="d-flex flex-wrap gap-3">
+                            <span class="mini-pill">PDF analysis</span>
+                            <span class="mini-pill">Fast answers</span>
+                            <span class="mini-pill">Quiz generation</span>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 reveal">
+                        <div class="chat-preview p-3">
+                            <div class="window-dots mb-3">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+
+                            <div class="row g-0 chat-box">
+                                <div class="col-md-4 chat-sidebar p-3">
+                                    <div class="sidebar-item">+ New chat</div>
+                                    <div class="sidebar-item">Marketing notes.pdf</div>
+                                    <div class="sidebar-item">Statistics TD.docx</div>
+                                    <div class="sidebar-item">Flashcards</div>
+                                    <div class="sidebar-item">Exam prep</div>
+                                </div>
+
+                                <div class="col-md-8 p-3 p-md-4">
+                                    <div class="message user-msg">
+                                        Summarize chapter 2 and make me 5 revision questions.
+                                    </div>
+
+                                    <div class="message ai-msg">
+                                        Chapter 2 focuses on segmentation, targeting and positioning. Here is a simple
+                                        summary, followed by 5 revision questions...
+                                    </div>
+
+                                    <div class="input-box mt-4 d-flex justify-content-between align-items-center">
+                                        <span class="text-light-emphasis">Ask something about your documents...</span>
+                                        <button class="btn btn-main rounded-pill px-3">
+                                            <i class="bi bi-send"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Features -->
+        <section id="features" class="py-5">
+            <div class="container py-5">
+                <h2 class="section-title text-center reveal">What the AI can do</h2>
+                <p class="section-text text-center reveal">
+                    A student-focused chatbot that helps you understand and use your course material
+                    faster.
+                </p>
+
+                <div class="row g-4 mt-4">
+                    <div class="col-md-6 col-xl-3 reveal">
+                        <div class="feature-card h-100 p-4">
+                            <div class="icon-box mb-3">
+                                <i class="bi bi-upload"></i>
+                            </div>
+                            <h4>Upload documents</h4>
+                            <p>Import PDFs, notes and files in one place.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-xl-3 reveal">
+                        <div class="feature-card h-100 p-4">
+                            <div class="icon-box mb-3">
+                                <i class="bi bi-chat-left-text"></i>
+                            </div>
+                            <h4>Ask questions</h4>
+                            <p>Get direct answers based on your course files.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-xl-3 reveal">
+                        <div class="feature-card h-100 p-4">
+                            <div class="icon-box mb-3">
+                                <i class="bi bi-journal-richtext"></i>
+                            </div>
+                            <h4>Summaries</h4>
+                            <p>Turn long lessons into short and clear notes.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-xl-3 reveal">
+                        <div class="feature-card h-100 p-4">
+                            <div class="icon-box mb-3">
+                                <i class="bi bi-patch-question"></i>
+                            </div>
+                            <h4>Generate quizzes</h4>
+                            <p>Create revision questions and flashcards quickly.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Documents -->
+        <section id="documents" class="py-5">
+            <div class="container py-5">
+                <h2 class="section-title text-center reveal">Your document library</h2>
+                <p class="section-text text-center reveal">Organize course files, assignments and revision material.</p>
+
+                <div class="row g-4 mt-4">
+                    <div class="col-md-6 col-xl-4 reveal">
+                        <div class="doc-card h-100 p-4">
+                            <span class="badge badge-custom mb-3">PDF</span>
+                            <h5>CEJM Notes</h5>
+                            <p>Summaries, definitions and important concepts for exams.</p>
+                            <a href="#" class="btn btn-outline-custom rounded-pill btn-sm px-3">Open file</a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-xl-4 reveal">
+                        <div class="doc-card h-100 p-4">
+                            <span class="badge badge-custom mb-3">DOCX</span>
+                            <h5>Maths study</h5>
+                            <p>Ask the AI to explain the case and help structure the answer.</p>
+                            <a href="#" class="btn btn-outline-custom rounded-pill btn-sm px-3">Ask AI</a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-xl-4 reveal">
+                        <div class="doc-card h-100 p-4">
+                            <span class="badge badge-custom mb-3">Slides</span>
+                            <h5>Cybersecurity course</h5>
+                            <p>Generate quiz questions and simple explanations from slides.</p>
+                            <a href="pages/chat.html" class="btn btn-outline-custom rounded-pill btn-sm px-3">Generate quiz</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="py-5">
+            <div class="container py-5">
+                <div class="contact-card p-5 reveal">
+
+                    <p class="text-info-custom fw-semibold text-center">Contact</p>
+                    <h2 class="text-center mb-4">Get in touch</h2>
+
+                    <div class="row g-4">
+
+                        <!-- Form -->
+                        <div class="col-md-12">
+                            <form id="#contact">
+                                <div class="mb-3">
+                                    <label class="form-label">Name</label>
+                                    <input type="text" class="form-control" placeholder="Your name">
+                                </div>
+
+                                <div class="mb-3">
+                                    <label class="form-label">Email</label>
+                                    <input type="email" class="form-control" placeholder="your@email.com">
+                                </div>
+
+                                <div class="mb-3">
+                                    <label class="form-label">Message</label>
+                                    <textarea class="form-control" rows="4" placeholder="Your message"></textarea>
+                                </div>
+
+                                <button class="btn btn-main w-100 rounded-pill">
+                                    Send message
+                                </button>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer -->
+        <footer class="text-center py-4 footer-custom">
+            <p class="mb-0">© 2026 BTS SIO AI — Student assistant for smarter revision.</p>
+        </footer>
+
+        <script src="js/script.js"></script>
+        <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

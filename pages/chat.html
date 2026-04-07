@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AI Chat</title>
+
+        <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="../css/chat.css">
+    </head>
+    <body>
+
+        <div class="container-fluid app">
+            <div class="row h-100">
+
+                <!-- Desktop sidebar -->
+                <div class="d-none d-lg-block col-lg-3 sidebar p-3">
+                    <h5 class="mb-4">Chats</h5>
+                    <div class="sidebar-item">New chat</div>
+                    <div class="sidebar-item">CEJM notes</div>
+                    <div class="sidebar-item">Math revision</div>
+                    <div class="sidebar-item">Cybersecurity</div>
+                </div>
+
+                <!-- Mobile sidebar -->
+                <div
+                    class="offcanvas offcanvas-start d-lg-none"
+                    tabindex="-1"
+                    id="mobileSidebar"
+                    aria-labelledby="offcanvasScrollingLabel"
+                    data-bs-scroll="true"
+                    data-bs-backdrop="false">
+
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="mobileSidebarLabel">Chats</h5>
+                        <button
+                            type="button"
+                            class="btn-close btn-close-white"
+                            data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+
+                    <div class="offcanvas-body">
+                        <div class="sidebar-item">New chat</div>
+                        <div class="sidebar-item">CEJM notes</div>
+                        <div class="sidebar-item">Math revision</div>
+                        <div class="sidebar-item">Cybersecurity</div>
+                    </div>
+                </div>
+
+                <!-- Chat area -->
+                <div class="col-12 col-lg-9 chat-area">
+
+                    <div class="chat-title d-flex align-items-center gap-3">
+                        <button
+                            class="btn btn-outline-light d-lg-none"
+                            type="button"
+                            data-bs-toggle="offcanvas"
+                            data-bs-target="#mobileSidebar"
+                            aria-controls="mobileSidebar">
+                            <i class="bi bi-list"></i>
+                        </button>
+
+                        <h5 class="m-0">AI Assistant</h5>
+                    </div>
+
+                    <div class="messages" id="messages">
+                        <div class="message ai">Hello 👋 Ask me anything about your documents.</div>
+                    </div>
+
+                    <div class="input-box d-flex gap-2 text-white">
+                        <input
+                            id="input"
+                            type="text"
+                            class="form-control"
+                            placeholder="Type your message...">
+                        <button class="btn btn-send" id="sendBtn">
+                            <i class="bi bi-send"></i>
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="../js/chat.js"></script>
+    </body>
+</html>
