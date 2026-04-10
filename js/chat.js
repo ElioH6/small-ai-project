@@ -6,7 +6,7 @@ const resetChatBtnMobile = document.getElementById("resetChatBtnMobile");
 
 const BACKEND_BASE_URL = window.location.hostname === "127.0.0.1" || window.location.hostname === "localhost"
     ? "http://localhost:3000"
-    : "https://YOUR-RENDER-SERVICE-NAME.onrender.com";
+    : "https://small-ai-project.onrender.com";
 
 const API_URL = `${BACKEND_BASE_URL}/api/chat`;
 const RESET_URL = `${BACKEND_BASE_URL}/api/reset`;
