@@ -93,3 +93,9 @@ body {
      backdrop-filter: blur(10px);
     color: white;
 }
+
+@media (max-width: 767px) {
+    .input-box {
+            padding-bottom: 75px;
+    }
+}
