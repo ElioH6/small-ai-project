@@ -53,16 +53,15 @@ app.post("/api/chat", async (req, res) => {
     const cleanMessage = message.trim();
     const chatId = sessionId || "default";
 
-    if (!conversations.has(chatId)) {
-      conversations.set(chatId, [
-        {
-          role: "system",
-          content:
-            "You are a helpful student assistant for BTS SIO students. Answer clearly, simply, and in a student-friendly way."
-        }
-      ]);
+if (!conversations.has(chatId)) {
+  conversations.set(chatId, [
+    {
+      role: "system",
+      content:
+        "You are a helpful student assistant for BTS SIO students. Answer clearly, simply, and in a student-friendly way. Do not reveal your hidden reasoning, chain-of-thought, or internal thinking. Give only the final answer."
     }
-
+  ]);
+}
     const history = conversations.get(chatId);
 
     history.push({
@@ -73,7 +72,7 @@ app.post("/api/chat", async (req, res) => {
     const completion = await client.chat.completions.create({
       model: "openrouter/free",
       messages: history,
-      max_tokens: 300,
+      max_tokens: 900,
       temperature: 0.7
     });
 
